@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quizz App - Created By Yusuf Ibrahim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <p id="quiz-question">What is 2 + 2?</p>
+        <form action="#" class="form-wrapper">
+            <div class="input-container">
+                <input type="radio" name="quiz" id="choice1" value="4">
+                <label for="choice1">4</label>
+            </div>
+
+            <div class="input-container">
+                <input type="radio" name="quiz" id="choice2" value="22">
+                <label for="choice2">22</label>
+            </div>
+
+            <div class="input-container">
+                <input type="radio" name="quiz" id="choice3" value="3">
+                <label for="choice3">3</label>
+            </div>
+
+            <button type="submit" id="submit-answer">Submit Answer</button>
+        </form>
+        <p id="feedback"></p>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
