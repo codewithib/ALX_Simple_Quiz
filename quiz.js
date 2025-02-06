@@ -8,7 +8,7 @@ function checkAnswer(event) {
     if (userAnswer === correctAnswer) {
         feedback.textContent = "Correct! Well done.";
     } else {
-        feedback.textContent = "That's incorrect, try again!";
+        feedback.textContent = "That's incorrect. Try again!";
     }
 }
 
