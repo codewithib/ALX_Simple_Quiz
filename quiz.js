@@ -1,9 +1,10 @@
-function checkAnswer(event) {
+const checkAnswer = (event) => {
     event.preventDefault();
     const correctAnswer = "4";
-    const selectedAnswer = document.querySelector('input[name="quiz"]:checked');
-    const userAnswer = selectedAnswer.value;
-    const feedback = document.getElementById("#feedback");
+    const selectedOption = document.querySelector('input[name="quiz"]:checked');
+    const userAnswer = selectedOption.value;
+    
+    const feedback = document.getElementById("feedback");
 
     if (userAnswer === correctAnswer) {
         feedback.textContent = "Correct! Well done.";
@@ -12,5 +13,6 @@ function checkAnswer(event) {
     }
 }
 
-const btn = document.getElementById("submit-answer");
-btn.addEventListener("click", checkAnswer);
+const submitBtn = document.getElementById("submit-answer");
+
+submitBtn.addEventListener("click", checkAnswer);

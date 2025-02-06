@@ -39,6 +39,10 @@ label {
     color: #fff;
 }
 
+#submit-answer:hover {
+    background-color: #000;
+}
+
 .form-wrapper {
     display: flex;
     flex-direction: column;
