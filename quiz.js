@@ -3,12 +3,12 @@ function checkAnswer(event) {
     const correctAnswer = "4";
     const selectedAnswer = document.querySelector('input[name="quiz"]:checked');
     const userAnswer = selectedAnswer.value;
-    const feedbackElement = document.querySelector("p#feedback");
+    const feedback = document.getElementById("#feedback");
 
     if (userAnswer === correctAnswer) {
-        feedbackElement.textContent = "Correct, Well done!";
+        feedback.textContent = "Correct! Well done.";
     } else {
-        feedbackElement.textContent = "That's incorrect, try again!";
+        feedback.textContent = "That's incorrect, try again!";
     }
 }
 
